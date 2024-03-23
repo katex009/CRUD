@@ -4,4 +4,5 @@
     <h2>{{ publication.title }}</h2>
     <p>{{ publication.body }}</p>
     <a href="{% url 'post_edit' publication.pk %}">Edit</a>
+    <a href="{% url 'post_delete' publication.pk %}">Delete</a>
 {% endblock content %}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}sing up - pestaña{% endblock title %}
+
+{% block content %}
+    <h2>sing up</h2>
+    <form method="post">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">sing up</button>
+    </form>
+{% endblock content %}
